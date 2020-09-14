@@ -1,12 +1,13 @@
 package jpabook.jpashop.domain.item;
 
-import com.fasterxml.jackson.annotation.JsonGetter;
 import lombok.Setter;
 import lombok.Getter;
 
+import javax.persistence.DiscriminatorValue;
 import javax.persistence.Entity;
 
 @Entity
+@DiscriminatorValue("M")
 @Getter @Setter
 public class Movie extends Item {
 
